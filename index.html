@@ -1,0 +1,107 @@
+<html>
+
+<head>
+	<title>Genetics</title>
+	<script src="genetics.js"></script>
+	<script>
+		window.onload = function(){
+			var world = new World(10000, 100, "Hello, World!!!!", "genetics", "stats");
+			console.log(world.Population);
+			//world.InitGen();
+		}
+	</script>
+	<style>
+		*{
+			font-family: helvetica, arial, sans-serif;
+		}
+	
+		body{
+			background-color: #e2e1e0;
+		}
+	
+		#genetics, #stats{
+			background-color: #fff;
+			display: block;
+			width: 600px;
+			margin: 0 auto;
+			padding: 12px;
+		}
+		
+		#genetics{
+			height: 200px;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			border-top-right-radius: 2px;
+			border-top-left-radius: 2px;
+		}
+		
+		#stats{
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			margin-top: 12px;
+			height: 400px;
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+			overflow: auto;
+		}
+		
+		.button{
+			margin-right: 12px;
+			background-color: #fff;
+			border-color: rgba(0,0,0,0);
+			border-radius: 2px;
+			border-style: solid;
+			border-width: 1px;
+			padding: 6px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			transition: .2s;
+		}
+		
+		.button:hover{
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			background-color: #eeeeee;
+			cursor: pointer;
+		}
+		
+		#populationList{
+			display: block;
+			margin: 12px auto;
+			padding: 0;
+			overflow: auto;
+		}
+		
+		.individual{
+			margin: 4px 0;
+			list-style-type: none;
+		}
+		
+		.solutionText{
+			padding: 6px;
+			border-radius: 2px;
+			border-color: #bdbdbd;
+			border-style: solid;
+			border-width: 1px;
+		}
+		
+		.warning{
+			color: #F44336;
+			font-size: 12px;
+			margin-left: 12px;
+			text-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+		}
+		
+		h1,h2,h3,h4,h5,h6,p{
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="genetics">
+	
+	</div>
+	
+	<div id="stats">
+	</div>
+</body>
+
+</html>
