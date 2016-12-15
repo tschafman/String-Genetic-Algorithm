@@ -219,7 +219,6 @@ class Fitness{
 	constructor(solution){
 		this.Solution = solution ? solution : "test";
 		this.Limit = 16;
-		this.TourneySize = 10;
 	}
 	
 	SetPopulationFitness(population){
